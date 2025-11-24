@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Start-up - Головна</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header, nav, main, footer { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        thead { background-color: #f4f4f4; }
+        tfoot { font-weight: bold; background-color: #e9e9e9; }
+        .buttons { text-align: right; }
+        .btn { padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        aside { float: right; width: 25%; background: #f9f9f9; padding: 10px; border: 1px dashed #999; }
+        article { width: 70%; display: inline-block; }
+        .stylized-text { font-size: 1.1em; margin: 15px 0; }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px;">
+            <img src="img.png" alt="Логотип Tech Start-up" style="max-height: 50px; max-width: 50px;" />
+            <h1>Tech Start-up "NovaFuture"</h1>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn">Перейти у власний кабінет</a>
+            <a href="#" class="btn" style="background-color: #28a745;">Зареєструватись</a>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="projects.html">Проєкти</a></li> <li><a href="#reviews">Відгуки про нас</a></li> <li><a href="feedback.html">Зворотній зв’язок</a></li> </ul>
+</nav>
+
+<main>
+    <aside>
+        <h3>Корисні ресурси</h3>
+        <p>Наші партнери:</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+        <p><a href="#founders">Перейти до засновників</a></p>
+    </aside>
+
+    <article>
+        <h2>Наша мета</h2>
+        <p>Ми створюємо інноваційні рішення для автоматизації бізнесу.</p>
+
+        <p class="stylized-text">
+            Ми <b>віримо</b>, що <i>технології</i> — це <u>майбутнє</u>, яке створює <span style="color: red;">цінність</span> для <em>кожного клієнта</em>.
+        </p>
+
+        <h3>Завдання для досягнення мети:</h3>
+        <ul>
+            <li>Розробка штучного інтелекту для агросектору.</li>
+            <li>Залучення іноземних інвестицій.</li>
+            <li>Створення екосистеми для молодих розробників.</li>
+        </ul>
+
+        <div id="founders">
+            <h3 align="center">Інформація про команду засновників</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th rowspan="2" style="width: 30px;">№</th>
+                    <th rowspan="2">Прізвище та Ім'я</th>
+                    <th rowspan="2">Роль</th> <th rowspan="2">Освіта</th> <th colspan="2">Контакти</th>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <th>Телефон</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Іванов Іван</td>
+                    <td>CEO</td>
+                    <td>Магістр</td>
+                    <td>ivanov@tech.com</td>
+                    <td>+380501111111</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Петров Петро</td>
+                    <td rowspan="2" style="vertical-align: middle;">CTO (Тех. відділ)</td>
+                    <td>Бакалавр</td>
+                    <td>petrov@tech.com</td>
+                    <td>+380502222222</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Сидорова Анна</td>
+                    <td>PhD</td>
+                    <td>anna@tech.com</td>
+                    <td>+380503333333</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Коваль Дмитро</td>
+                    <td>Маркетолог</td>
+                    <td>Магістр</td>
+                    <td colspan="2" style="text-align: center;">Немає даних</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="6">Всього - 4 ключові особи</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </article>
+</main>
+
+<div id="reviews" style="padding: 20px; border: 1px solid #ddd; margin-bottom: 20px;">
+    <h3>Відгуки про нас</h3>
+    <p>Тут будуть розміщені відгуки клієнтів.</p>
+</div>
+
+<footer>
+    <p><b>Адреса:</b> м. Київ, вул. Юлії Здановської, 55</p>
+    <p><b>Телефони:</b> +38 (044) 123-45-67, +38 (095) 659-80-59</p>
+    <p>&copy; 2025 Tech Start-up "NovaFuture"</p>
+</footer>
+
+</body>
+</html>
