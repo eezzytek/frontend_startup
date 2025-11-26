@@ -3,67 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Tech Start-up - Проєкти</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; }
-        .project-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
-        .project-card img { max-width: 200px; height: auto; float: left; margin-right: 20px; }
-        .clearfix::after { content: ""; clear: both; display: table; }
-        .btn { padding: 10px 20px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div style="display: flex; align-items: center; gap: 20px;">
-        <img src="img.png" alt="Лого" style="max-width: 50px">
-        <h2>Tech Start-up "NovaFuture" - Наші проєкти</h2>
+<header class="header projects-header">
+    <div class="logo_container">
+        <img src="img.png" alt="Логотип Tech Start-up" style="max-height: 50px;">
+        <h2>Tech Start-up "NovaFuture"</h2>
     </div>
 </header>
 
-<main>
-    <h3>Список актуальних проєктів</h3>
-
-    <div class="project-card clearfix">
-        <div style="display: flex; align-items: center;">
-            <img src="img_1.png" alt="Smart Farm System">
-            <div>
-                <h4>1. Smart Farm System</h4>
-                <p><b>Країна:</b> Україна</p>
-            </div>
-        </div>
-        <p>5 основних характеристик:</p>
-        <ol>
-            <li>Автоматичний полив.</li>
-            <li>Моніторинг стану ґрунту.</li>
-            <li>Інтеграція з дронами.</li>
-            <li>Аналітика врожайності.</li>
-            <li>Мобільний додаток для керування.</li>
-        </ol>
+<main class="projects-main">
+    <div class="projects-title-block">
+        <h3>Список актуальних проєктів</h3>
     </div>
 
-    <div class="project-card clearfix">
-        <div style="display: flex; align-items: center;">
-            <img src="img_2.png" alt="Eco Energy">
-            <div>
-                <h4>2. Eco Energy Home</h4>
-                <p><b>Країна:</b> Польща</p>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="card-header">
+                <img src="img_1.png" alt="Smart Farm System" class="card-img">
+                <div class="card-title-group">
+                    <h4>Smart Farm System</h4>
+                    <p class="tag"><b>Країна:</b> Україна</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>5 основних характеристик:</p>
+                <ol>
+                    <li>Автоматичний полив.</li>
+                    <li>Моніторинг стану ґрунту.</li>
+                    <li>Інтеграція з дронами.</li>
+                    <li>Аналітика врожайності.</li>
+                    <li>Мобільний додаток для керування.</li>
+                </ol>
             </div>
         </div>
-        <p>5 основних характеристик:</p>
-        <ol>
-            <li>Сонячні панелі нового покоління.</li>
-            <li>Система накопичення енергії.</li>
-            <li>Розумний розподіл навантаження.</li>
-            <li>Зниження витрат на 40%.</li>
-            <li>Екологічні матеріали.</li>
-        </ol>
+
+        <div class="project-card">
+            <div class="card-header">
+                <img src="img_2.png" alt="Eco Energy" class="card-img">
+                <div class="card-title-group">
+                    <h4>Eco Energy Home</h4>
+                    <p class="tag"><b>Країна:</b> Польща</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>5 основних характеристик:</p>
+                <ol>
+                    <li>Сонячні панелі нового покоління.</li>
+                    <li>Система накопичення енергії.</li>
+                    <li>Розумний розподіл навантаження.</li>
+                    <li>Зниження витрат на 40%.</li>
+                    <li>Екологічні матеріали.</li>
+                </ol>
+            </div>
+        </div>
     </div>
 
-    <br>
-    <a href="index.html" class="btn">⬅ На Головну сторінку</a>
+    <div class="back-button-container">
+        <a href="index.html" class="btn">⬅ На Головну сторінку</a>
+    </div>
 </main>
 
-<footer>
+<footer class="footer">
     <p>&copy; 2025 NovaFuture Projects</p>
 </footer>
 
