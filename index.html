@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Tech Start-up - Головна</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +13,10 @@
 <header class="header">
     <div class="logo_container">
         <img src="img.png" alt="Логотип Tech Start-up" style="max-height: 50px; max-width: 50px;" />
-        <h1>Tech Start-up "NovaFuture"</h1>
+        <div>
+            <h1>Tech Start-up "NovaFuture"</h1>
+            <div id="motto-container"></div>
+        </div>
     </div>
     <div class="nav_buttons">
         <a href="#" class="btn">Перейти у власний кабінет</a>
@@ -73,7 +75,7 @@
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Іванов Іван</td>
+                    <td><p id="founder-name">Іванов Іван</p></td>
                     <td>CEO</td>
                     <td>Магістр</td>
                     <td>ivanov@tech.com</td>
@@ -121,6 +123,18 @@
     <p><b>Телефони:</b> +38 (044) 123-45-67, +38 (095) 659-80-59</p>
     <p>&copy; 2025 Tech Start-up "NovaFuture"</p>
 </footer>
+
+<div id="riddle-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>Загадка від засновника</h3>
+        <p>Що піднімає вас вгору і опускає вниз, але саме залишається на місці?</p>
+        <input type="text" id="riddle-answer" placeholder="Ваша відповідь...">
+        <button id="check-riddle" class="btn">Перевірити</button>
+    </div>
+</div>
+
+<script src="index.js"></script>
 
 </body>
 </html>

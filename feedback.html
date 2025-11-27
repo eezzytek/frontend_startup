@@ -80,9 +80,12 @@
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label for="details">Детально (макс. 500 символів):</label>
-                    <textarea id="details" name="details" rows="5" maxlength="500" placeholder="Опишіть ваше питання..."></textarea>
+                <div class="form-group relative-parent">
+                    <label for="details" id="">Детально (макс. 500 символів):</label>
+                    <div class="tooltip-wrapper">
+                        <textarea id="details" name="details" rows="5" maxlength="500" placeholder="Опишіть ваше питання..."></textarea>
+                        <span class="tooltip-text" id="tooltip-text">Вдячні за Ваш час! Конкретизуйте мету звернення, будь ласка</span>
+                    </div>
                 </div>
             </fieldset>
 
@@ -103,6 +106,8 @@
 <footer class="footer">
     <p>&copy; 2025 NovaFuture Feedback</p>
 </footer>
+
+<script src="index.js"></script>
 
 </body>
 </html>
